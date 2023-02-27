@@ -1,0 +1,500 @@
+body{
+    padding: 2%;
+    background: url(images/12373077260a452a8dfa536b29fdf1ba.jpg);
+    background-size: cover;
+    height: 100%;
+    font-family: Arial;
+}
+
+.mainBlock
+{
+  margin-top: 2%;
+  margin-left: 2%;
+  padding: 20px 50px;
+  background-color: rgb(11, 11, 61, 0.45);
+  width: 875px;
+  height: 600px;
+  border-radius: 20px;
+  display: block;
+  float: left;
+}
+
+
+ul.nav
+{
+  position: fixed;
+  margin-top: 2%;
+  left: 75%;
+  padding: 10px 10px;
+  background-color: rgb(11, 11, 61, 0.45);
+  border-radius: 20px;
+  float: right;
+  list-style: none;
+}
+
+ul.nav a{
+    background:  rgb(13, 5, 71, 0.6);
+    border: 2px solid rgb(186, 192, 218, 0.8);
+    margin-bottom: 3px;
+    padding: 7px;
+    width: 230px;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav a:hover{
+    background-color: rgb(204, 204, 204, 0.6);
+    color: rgb(13, 5, 71);
+    border: 2px solid rgba(5, 2, 28, 0.8);
+    font-weight: 600;
+}
+
+.hiddenVar{
+  display: none;
+}
+
+.hiddenVarWeapon{
+  display: none;
+}
+
+.hiddenVarArt{
+  display: none;
+}
+
+.hiddenVarArt2{
+  display: none;
+}
+
+.hiddenVarArt3{
+  display: none;
+}
+
+.hiddenTitle{
+  display: none;
+}
+
+.hiddenContent{
+  display: none;
+}
+
+.hiddenCreatorId{
+  display: none;
+}
+
+.hiddenGuideId{
+  display: none;
+}
+
+.currSostCheck{
+  display: none;
+}
+
+.guideButton{
+  height: 100px;
+  width: 400px;
+  background:  rgb(13, 5, 71, 0.95);
+  border-radius: 20px;
+  color: #cccccc;
+  font-size: 0px;
+  border: 4px solid rgb(186, 192, 218, 0.8);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  float: left;
+}
+
+.guideButton:hover{
+  cursor: pointer;
+}
+
+.titleBox{
+      height: 80px;
+      width: 270px;
+      font-size: 0px;
+      border: 2px solid rgb(186, 192, 218, 0.8);
+      border-radius: 20px;
+      float: right;
+    }
+
+.titleArea{
+    margin-top: 40px;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #cccccc;
+}    
+
+.imgBox{
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+      /* Modal Content */
+.modal-content {
+  background-color: rgb(11, 11, 61, 0.8);
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  width: 80%;
+  height: 80%;
+}
+
+      /* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.guideList{
+  height: 450px;
+  width: 875px;
+  font-size: 0px;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  background: rgb(13, 5, 71, 0.4);
+  border-radius: 10px;
+  overflow-y: auto;
+  display: inline-block;
+  align-items: center;
+}
+
+.container{
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.guideList::-webkit-scrollbar{
+  width: 20px;
+  border: 3px solid rgb(186, 192, 218, 0.8);
+  border-radius: 10px;
+}
+
+.guideList::-webkit-scrollbar-track{
+  background: #0d054799;
+  border-radius: 20px;
+}
+
+.guideList::-webkit-scrollbar-thumb{
+  background-color: rgb(168, 187, 253, 0.3);
+  border-radius: 10px;
+  border: 3px solid rgba(13, 5, 71, 0.6);
+}
+
+.guideList::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(168, 187, 253, 0.6);
+}
+
+.filter_line{
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+  background:  rgb(13, 5, 71, 0.6);
+  border-radius: 20px;
+  color: #cccccc;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+}
+
+.filtreGuideButtonLine{
+  margin-left: 2%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  align-items: center;
+}
+
+.filtreGuideButton{
+  width: 30%;
+  height: 60%;
+  transform: translateY(25%);
+  background: rgb(13, 5, 71, 0.6);
+  border-radius: 20px;
+  color: #cccccc;
+  font-size: 18px;
+  border: 4px solid rgb(186, 192, 218, 0.8);
+  font-weight: 500;
+}
+
+.filtreGuideButton:hover{
+  cursor: pointer;
+  background-color: rgb(204, 204, 204, 0.6);
+    color: rgb(13, 5, 71);
+    border: 4px solid rgba(5, 2, 28, 0.8);
+    font-weight: 600;
+}
+
+.textDiv{
+  height: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.over{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  transform: translateY(-30%);
+}
+
+.guideContent{
+  display: block;
+  height: 600px;
+  width: 95%;
+}
+
+.titleBox.show{
+  top: 10px;
+  width: 70%;
+  height: 84px;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 700;
+  color: #cccccc;
+  text-align: center;
+}
+
+.imgBox.show{
+  height: 230px;
+  width: 230px;
+  float: none;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #cccccc;
+  overflow: hidden;
+}
+
+.contentBox.show{
+  width: 70%;
+  max-height: none;
+  height: 290px;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 700;
+  color: #cccccc;
+  text-align: justify;
+  transform: translateY(-25%);
+  overflow-y: auto;
+}
+
+.contentBox.show::-webkit-scrollbar{
+  width: 20px;
+  border: 3px solid rgb(186, 192, 218, 0.8);
+  border-radius: 10px;
+}
+
+.contentBox.show::-webkit-scrollbar-track{
+  background: #0d054799;
+  border-radius: 20px;
+}
+
+.contentBox.show::-webkit-scrollbar-thumb{
+  background-color: rgb(168, 187, 253, 0.3);
+  border-radius: 10px;
+  border: 3px solid rgba(13, 5, 71, 0.6);
+}
+
+.contentBox.show::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(168, 187, 253, 0.6);
+}
+
+.artShowLine{
+  height: 80px;
+  width: 590px;
+  margin-left: 30px;
+  margin-right: 50px;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  transform: translateY(-50%);
+  padding-left: 5px;
+}
+
+.artCont{
+  width: 180px;
+  height: 70px;
+  background: rgb(13, 5, 71, 0.6);
+  border-radius: 20px;
+  color: #cccccc;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  display:flex;
+  align-items: center;
+  float: left;
+}
+
+.textArt{
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.delBtn{
+  background:  rgb(13, 5, 71, 0.6);
+    border: 2px solid rgb(186, 192, 218, 0.8);
+    height: 60px;
+    width: 146px;
+    margin-bottom: 3px;
+    padding: 7px;
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+    float: right;
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+}
+
+.delBtn:hover{
+  cursor: pointer;
+  border: 6px solid rgb(186, 192, 218, 0.8);
+  padding-top: 12px;
+  height: 52px;
+  width: 138px;
+  background: #ee5656;
+  
+}
+
+.filterImgButton{
+  transform: translateY(50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #8a94c2;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+}
+
+.filterImgButton:hover{
+  cursor: pointer;
+}
+
+.filterLine{
+  height: 40px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.filtres{
+  margin: auto;
+  display: flex;
+  width: 500px
+}
+
+.elementBtn{
+  background: none;
+  border: none;
+  height: 40px;
+}
+
+.elementBtn:hover{
+  cursor: pointer;
+}
+
+.filterAllBtn{
+  background:  rgb(13, 5, 71, 0.6);
+  color: #cccccc;
+  font-size: 17;
+  font-weight: 600;
+  border-radius: 7px;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  height: 40px;
+}
+
+.filterAllBtn:hover{
+  cursor: pointer;
+}
+
+.buttonList{
+  overflow-y: scroll;
+  display: inline-block;
+  align-items: center;
+  height: 90%;
+}
+
+.buttonList::-webkit-scrollbar{
+  width: 20px;
+  border: 3px solid rgb(186, 192, 218, 0.8);
+  border-radius: 10px;
+}
+
+.buttonList::-webkit-scrollbar-track{
+  background: #0d054799;
+}
+
+.buttonList::-webkit-scrollbar-thumb{
+  background-color: rgb(168, 187, 253, 0.3);
+  border-radius: 10px;
+  border: 3px solid rgba(13, 5, 71, 0.6);
+}
+
+.buttonList::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(168, 187, 253, 0.6);
+}
+
+.varBtn{
+  width: 175px;
+  height: 175px;
+  background:  rgb(13, 5, 71, 0.6);
+  border-radius: 20px;
+  color: #cccccc;
+  overflow: hidden;
+  border: 2px solid rgb(186, 192, 218, 0.8);
+  margin: 3px;
+  font-weight: 600;
+  float: left;
+}
+
+.varBtn:hover{
+  cursor: pointer;
+}
+
+.varBtn.canc{
+  background: url(images/free-icon-cancel-3239888.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
