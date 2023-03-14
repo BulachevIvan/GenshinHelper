@@ -31,6 +31,7 @@ var weapons = [
     new Weapon("Покоритель вихря", src="css/images/weapons/5star/spears/Weapon_Vortex_Vanquisher.png", "spear"),
 
     new Weapon("Краснорогий камнеруб", src="css/images/weapons/5star/claymores/Weapon_Redhorn_Stonethresher.png", "claymore"),
+    new Weapon("Маяк тростникового моря", src="css/images/weapons/5star/claymores/Dehya_Sign.png", "claymore"),
     new Weapon("Небесное величие", src="css/images/weapons/5star/claymores/Weapon_Skyward_Pride.png", "claymore"),
     new Weapon("Песнь разбитых сосен", src="css/images/weapons/5star/claymores/Weapon_Song_of_broken_pines.png", "claymore"),
     new Weapon("Некованый", src="css/images/weapons/5star/claymores/Weapon_Unforged.png", "claymore"),

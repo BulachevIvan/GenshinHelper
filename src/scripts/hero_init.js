@@ -22,6 +22,7 @@ var persons = [
     new Person("Чунь Юнь", src="css/images/characters/Character_Chongyun_Thumb.png", "cryo"),
     new Person("Коллеи", src="css/images/characters/Character_Collei_Thumb.png", "dendro"),
     new Person("Сайно", src="css/images/characters/Character_Cyno_Thumb.png", "electro"),
+    new Person("Дехья", src="css/images/characters/Dehya.png", "pyro"),
     new Person("Дилюк", src="css/images/characters/Character_Diluc_Thumb.png", "pyro"),
     new Person("Диона", src="css/images/characters/Character_Diona_Thumb.png", "cryo"),
     new Person("Дори", src="css/images/characters/Character_Dori_Thumb.png", "electro"),
